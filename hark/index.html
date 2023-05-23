@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form action="">
+        <label for="inp">Աշխատավարձի հաշվիչ</label>
+        <br />
+        <input
+          id="inp"
+          type="number"
+          step="5000"
+          placeholder="Գրեք ձեր աշխատավարձը"
+        />
+        
+        <div style="display:'flex'",>
+        <select id="select" name="choice">
+          <option selected hidden value="other">Ընտրեք ոլորտը</option>
+          <option value="other">Այլ․․․</option>
+          <option value="It">ՏՏ ոլորտ</option>
+        </select>
+        <select id="select2" name="choice">
+          <option selected hidden value="other">Ընտրեք արժեքի կոդը</option>
+          <option value="AMD">Դրամ(֏)</option>
+          <option value="USD">Դոլար($)</option>
+          <option value="EUR">Եվրո(€)</option>
+          <option value="RUB">Ռուբլի(₽)</option>
+        </select>
+      </div>
+        <input id="button" type="button" value="Հաշվել" />
+      </form>
+      <div id="container">
+        <div>
+          <div>
+            <p>Եկամտահարկ</p>
+          </div>
+          <div>
+            <p id="ekam"></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>Սոցիալական հարկ</p>
+          </div>
+          <div>
+            <p id="soch"></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>Դրոշմանիշային հարկ</p>
+          </div>
+          <div>
+            <p id="drosh"></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>Մաքուր եկամուտ</p>
+          </div>
+          <div>
+            <p id="ekamut"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
